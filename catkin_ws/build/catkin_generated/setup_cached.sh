@@ -8,7 +8,8 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/xihelm/personal/courses/new/RSE/catkin_ws/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/xihelm/personal/courses/new/RSE/catkin_ws/devel/lib:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH='/home/xihelm/personal/courses/new/RSE/catkin_ws/devel/lib:/opt/ros/noetic/lib:/usr/local/cuda-11.6/lib64'
+export PKG_CONFIG_PATH="/home/xihelm/personal/courses/new/RSE/catkin_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/xihelm/personal/courses/new/RSE/catkin_ws/build'
 export ROSLISP_PACKAGE_DIRECTORIES='/home/xihelm/personal/courses/new/RSE/catkin_ws/devel/share/common-lisp'
 export ROS_PACKAGE_PATH="/home/xihelm/personal/courses/new/RSE/catkin_ws/src:$ROS_PACKAGE_PATH"
