@@ -11,8 +11,7 @@ class GoToPositionRequest(genpy.Message):
   _md5sum = "243293dc5d540de7ec323fc657126846"
   _type = "simple_arm/GoToPositionRequest"
   _has_header = False  # flag to mark the presence of a Header object
-  _full_text = """
-float64 joint_1
+  _full_text = """float64 joint_1
 float64 joint_2
 """
   __slots__ = ['joint_1','joint_2']

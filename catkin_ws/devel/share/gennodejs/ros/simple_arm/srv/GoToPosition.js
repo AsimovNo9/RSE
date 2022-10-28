@@ -77,7 +77,6 @@ class GoToPositionRequest {
   static messageDefinition() {
     // Returns full string definition for message
     return `
-    
     float64 joint_1
     float64 joint_2
     

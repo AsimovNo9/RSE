@@ -152,8 +152,7 @@ struct Definition< ::simple_arm::GoToPositionRequest_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "\n"
-"float64 joint_1\n"
+    return "float64 joint_1\n"
 "float64 joint_2\n"
 ;
   }

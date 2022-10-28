@@ -118,8 +118,7 @@
 (setf (get simple_arm::GoToPositionRequest :md5sum-) "eb45b449ee9f05b300349d9c9af72154")
 (setf (get simple_arm::GoToPositionRequest :datatype-) "simple_arm/GoToPositionRequest")
 (setf (get simple_arm::GoToPositionRequest :definition-)
-      "
-float64 joint_1
+      "float64 joint_1
 float64 joint_2
 ---
 string msg_feedback
@@ -129,8 +128,7 @@ string msg_feedback
 (setf (get simple_arm::GoToPositionResponse :md5sum-) "eb45b449ee9f05b300349d9c9af72154")
 (setf (get simple_arm::GoToPositionResponse :datatype-) "simple_arm/GoToPositionResponse")
 (setf (get simple_arm::GoToPositionResponse :definition-)
-      "
-float64 joint_1
+      "float64 joint_1
 float64 joint_2
 ---
 string msg_feedback

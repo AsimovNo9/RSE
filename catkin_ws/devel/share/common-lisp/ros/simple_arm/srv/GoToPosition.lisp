@@ -95,10 +95,10 @@
   "eb45b449ee9f05b300349d9c9af72154")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<GoToPosition-request>)))
   "Returns full string definition for message of type '<GoToPosition-request>"
-  (cl:format cl:nil "~%float64 joint_1~%float64 joint_2~%~%~%"))
+  (cl:format cl:nil "float64 joint_1~%float64 joint_2~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'GoToPosition-request)))
   "Returns full string definition for message of type 'GoToPosition-request"
-  (cl:format cl:nil "~%float64 joint_1~%float64 joint_2~%~%~%"))
+  (cl:format cl:nil "float64 joint_1~%float64 joint_2~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <GoToPosition-request>))
   (cl:+ 0
      8

@@ -78,6 +78,7 @@
 /home/xihelm/personal/courses/new/RSE/catkin_ws/build/simple_arm/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir
 /home/xihelm/personal/courses/new/RSE/catkin_ws/build/simple_arm/CMakeFiles/simple_arm_generate_messages.dir
 /home/xihelm/personal/courses/new/RSE/catkin_ws/build/simple_arm/CMakeFiles/controller_manager_msgs_generate_messages_py.dir
+/home/xihelm/personal/courses/new/RSE/catkin_ws/build/simple_arm/CMakeFiles/look_away.dir
 /home/xihelm/personal/courses/new/RSE/catkin_ws/build/simple_arm/CMakeFiles/std_msgs_generate_messages_nodejs.dir
 /home/xihelm/personal/courses/new/RSE/catkin_ws/build/simple_arm/CMakeFiles/simple_arm_genlisp.dir
 /home/xihelm/personal/courses/new/RSE/catkin_ws/build/simple_arm/CMakeFiles/_simple_arm_generate_messages_check_deps_GoToPosition.dir
