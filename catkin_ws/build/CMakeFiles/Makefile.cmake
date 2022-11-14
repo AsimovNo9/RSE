@@ -14,6 +14,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin_generated/installspace/_setup_util.py"
   "catkin_generated/order_packages.cmake"
   "first_package/catkin_generated/package.cmake"
+  "my_robot/catkin_generated/package.cmake"
   "simple_arm/catkin_generated/ordered_paths.cmake"
   "simple_arm/catkin_generated/package.cmake"
   "simple_arm/catkin_generated/simple_arm-msg-extras.cmake.develspace.in"
@@ -23,6 +24,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/xihelm/personal/courses/new/RSE/catkin_ws/src/CMakeLists.txt"
   "/home/xihelm/personal/courses/new/RSE/catkin_ws/src/first_package/CMakeLists.txt"
   "/home/xihelm/personal/courses/new/RSE/catkin_ws/src/first_package/package.xml"
+  "/home/xihelm/personal/courses/new/RSE/catkin_ws/src/my_robot/CMakeLists.txt"
+  "/home/xihelm/personal/courses/new/RSE/catkin_ws/src/my_robot/package.xml"
   "/home/xihelm/personal/courses/new/RSE/catkin_ws/src/simple_arm/CMakeLists.txt"
   "/home/xihelm/personal/courses/new/RSE/catkin_ws/src/simple_arm/package.xml"
   "/opt/ros/noetic/share/catkin/cmake/all.cmake"
@@ -230,6 +233,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "gtest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "first_package/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "my_robot/CMakeFiles/CMakeDirectoryInformation.cmake"
   "simple_arm/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

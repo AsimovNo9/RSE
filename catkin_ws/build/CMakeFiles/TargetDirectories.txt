@@ -43,6 +43,13 @@
 /home/xihelm/personal/courses/new/RSE/catkin_ws/build/first_package/CMakeFiles/edit_cache.dir
 /home/xihelm/personal/courses/new/RSE/catkin_ws/build/first_package/CMakeFiles/test.dir
 /home/xihelm/personal/courses/new/RSE/catkin_ws/build/first_package/CMakeFiles/_catkin_empty_exported_target.dir
+/home/xihelm/personal/courses/new/RSE/catkin_ws/build/my_robot/CMakeFiles/install/strip.dir
+/home/xihelm/personal/courses/new/RSE/catkin_ws/build/my_robot/CMakeFiles/install/local.dir
+/home/xihelm/personal/courses/new/RSE/catkin_ws/build/my_robot/CMakeFiles/install.dir
+/home/xihelm/personal/courses/new/RSE/catkin_ws/build/my_robot/CMakeFiles/list_install_components.dir
+/home/xihelm/personal/courses/new/RSE/catkin_ws/build/my_robot/CMakeFiles/rebuild_cache.dir
+/home/xihelm/personal/courses/new/RSE/catkin_ws/build/my_robot/CMakeFiles/edit_cache.dir
+/home/xihelm/personal/courses/new/RSE/catkin_ws/build/my_robot/CMakeFiles/test.dir
 /home/xihelm/personal/courses/new/RSE/catkin_ws/build/simple_arm/CMakeFiles/install/strip.dir
 /home/xihelm/personal/courses/new/RSE/catkin_ws/build/simple_arm/CMakeFiles/list_install_components.dir
 /home/xihelm/personal/courses/new/RSE/catkin_ws/build/simple_arm/CMakeFiles/edit_cache.dir
