@@ -25,6 +25,8 @@
     <material>Gazebo/Red</material>
   </gazebo>
 
+  <xacro:include filename="$(find my_robot)/urdf/my_robot.gazebo"/>
+
   <link name="robot_footprint"></link>
 
   <joint name="robot_footprint_joint" type="fixed">
