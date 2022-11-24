@@ -2,30 +2,17 @@
 #include "ball_chaser/DriveToTarget.h"
 #include "sensor_msgs/Image.h"
 
-
+int state = 0;
 ros::ServiceClient client;
 
 //Callback Function to Subscriber for Image data
 
-void move_robo_boy(int &state){
+void drive_robot(float lin_x, float ang_z){
 
     ball_chaser::DriveToTarget srv;
 
-    if(state == 1){
-        ROS_INFO_STREAM("Moving the robot to the left");
-        srv.request.x =  1.0;
-        srv.request.z =  -0.5;
-    }
-    else if (state == 2){
-        ROS_INFO_STREAM("Moving the robot to the right");
-        srv.request.x =  1.0;
-        srv.request.z =  0.5;
-    }
-    else{
-        ROS_INFO_STREAM("Moving the robot forward");
-        srv.request.x =  1.0;
-        srv.request.z =  0.0;
-    }
+    srv.request.x =  lin_x;
+    srv.request.z =  ang_z;
 
     try{
         client.call(srv);
@@ -35,40 +22,34 @@ void move_robo_boy(int &state){
     
 }
 
-void see_ball(const sensor_msgs::Image img){
-    bool is_white = false;
+void process_image_callback(const sensor_msgs::Image img){
+    int white_pixel = 255;
+    int position;
+    float x, z = 0;
 
-    int state = 0;
-
-
-    for(int i = 0; i< img.height; i++){
-        for(int j = 0; j < img.step;j++){
-            if(img.data[j] == 255){
-
-                //Check if the white pixel is located at the left 
-                if((j>0) && j<(img.step/3)){
-                    state = 1;
-                    break;
-                }
-
-                //Check if the white pixel is located at the center
-                if(j> (img.step/3) && j<(2*img.step/3)){
-                    state = 0;
-                    break;
-                }
-
-                //Check if the white pixel is located at the right
-                if(j> (2*img.step/3) && j<(img.step)){
-                    state = 2;
-                    break;
-                }
-            }
+    for(int i = 0; i < img.height*img.step; i++){
+        if(img.data[i] == 255){
+            position = (int)(i/img.height);
+            ROS_INFO_STREAM("Found white ball");
+            break;
         }
-        break;
+    }
+
+    if(position<=(img.step/3)){
+        x = 0.5;
+        z = -0.5;
+    }
+    if(position>(img.step/3) && (position<=2*img.step/3)){
+        x = 0.5;
+        z = -0.5;
+    }
+    if((position>(2*img.step/3)) && (position <= img.step)){
+        x = 0.5;
+        z = -0.5;
     }
 
     // Move the robot based off the state
-    move_robo_boy(state);
+    drive_robot(x, z);
 }
 
 int main(int argc, char** argv){
@@ -80,7 +61,7 @@ int main(int argc, char** argv){
     client = n.serviceClient<ball_chaser::DriveToTarget>("ball_chaser/command_robot");
 
     // Subscribing to camera images
-    ros::Subscriber image_sub = n.subscribe("/camera/rgb/image_raw",10, see_ball);
+    ros::Subscriber image_sub = n.subscribe("/camera/rgb/image_raw",10, process_image_callback);
 
     //Handling ROS communication events
     ros::spin();
